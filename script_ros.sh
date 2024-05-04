@@ -63,12 +63,14 @@ make
 # Inštalácia vykonateľného súboru a ďalších súborov do `/opt/kobuki/sim/`
 sudo make install
 
+cd ..
 # Source ROS2 Foxy
+
 source /opt/ros/foxy/setup.bash
 export ROS_LOCALHOST_ONLY=1
 
 # Vytvorenie ROS 2 workspace a klonovanie repozitára uds_kobuki_ros
-cd ..
+
 mkdir -p ros2_ws/src
 cd ros2_ws/src
 git clone https://github.com/stecf/uds_kobuki_ros.git
